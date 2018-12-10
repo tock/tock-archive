@@ -1,0 +1,13 @@
+[package]
+name = "nrf51"
+version = "0.1.0"
+authors = ["Tock Project Developers <tock-dev@googlegroups.com>"]
+
+[dependencies]
+cortexm0 = { git = "https://github.com/tock/tock", tag = "release-1.3" }
+kernel = { git = "https://github.com/tock/tock", tag = "release-1.3" }
+
+[dependencies.nrf5x]
+git = "https://github.com/tock/tock"
+tag = "release-1.3"
+features = ["nrf51"]
