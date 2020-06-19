@@ -1,0 +1,22 @@
+[package]
+name = "launchxl"
+version = "0.1.0"
+authors = ["Tock Project Developers <tock-dev@googlegroups.com>"]
+build = "build.rs"
+edition = "2018"
+
+[[bin]]
+name = "launchxl"
+path = "src/main.rs"
+
+[[bin]]
+name = "launchxlccfg"
+path = "src/ccfg.rs"
+
+[dependencies]
+components = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+cortexm4 = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+capsules = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+kernel = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+cc26x2 = { path = "../../chips/cc26x2" }
+enum_primitive = { git = "https://github.com/tock/tock/", tag = "release-1.5" }
