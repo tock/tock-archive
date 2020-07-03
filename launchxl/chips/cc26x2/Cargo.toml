@@ -1,0 +1,11 @@
+[package]
+name = "cc26x2"
+version = "0.1.0"
+authors = ["Tock Project Developers <tock-dev@googlegroups.com>"]
+edition = "2018"
+
+[dependencies]
+cortexm4 = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+tock_rt0 = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+kernel = { git = "https://github.com/tock/tock", tag = "release-1.5" }
+enum_primitive = { git = "https://github.com/tock/tock", tag = "release-1.5" }
